@@ -79,9 +79,9 @@
                    │   ├── bruteForce.js
                    │   ├── sqlInjection.js
                    │   └── xssProtection.js
-                   ├── db.js                  # Database connection
-                   ├── app.js                 # Main backend server
-                   ├── package.json
+                   ├── db.js                     # MongoDB connection setup
+                   ├── app.js                    # Main Express server
+                   ├── package.json              # Dependencies & scripts
                    └── README.md
 
   Technologies
