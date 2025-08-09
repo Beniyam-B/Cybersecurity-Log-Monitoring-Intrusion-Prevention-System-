@@ -62,29 +62,38 @@
 
 
   ## 7.	Project Structure
-       cybersec-log-monitor/
-                   ├── public/                # Public files
-				   ├──src/                    #Front-end files
-                   |   ├── css/               # Stylesheets
-                   │   ├── js/                # Client-side scripts
-                   │   ├── login.html         # Login page
-                   │   ├── signup.html        # Signup page
-                   │   ├── dashboard.html     # User dashboard
-                   │   └── admin.html         # Admin dashboard
-                   ├── routes/                # Express routes
-                   │   ├── auth.js            # Login/Signup routes
-                   │   ├── admin.js           # Admin-only routes
-                   │   └── monitor.js         # Attack detection routes
-                   ├── middleware/            # Security middlewares
-                   │   ├── bruteForce.js
-                   │   ├── sqlInjection.js
-                   │   └── xssProtection.js
-                   ├── db.js                     # MongoDB connection setup
-                   ├── app.js                    # Main Express server
-                   ├── package.json              # Dependencies & scripts
-                   └── README.md
+      CyberLogSystem/
+         │
+         ├── frontend/                 # Public-facing code (React / Static HTML+CSS+JS)
+         │   ├── public/                # Static assets (images, icons, favicon, manifest)
+         │   ├── src/                   # React source code or HTML+CSS+JS if not React
+         │   │   ├── components/        # Reusable UI elements (buttons, forms, modals)
+         │   │   ├── pages/             # Each main page (Login, Signup, Dashboard, Admin)
+         │   │   ├── utils/             # Helper functions (API calls, validation)
+         │   │   ├── App.js             # Main app wrapper
+         │   │   ├── index.js           # Entry point for React
+         │   │   └── styles/            # Global CSS or Tailwind configs
+         │   ├── package.json           # Frontend dependencies & scripts
+         │   └── README.md              # Frontend documentation
+         │
+         ├── secure/                    # Secure folder holding backend code
+         │   ├── backend/               # Backend (Express.js + MongoDB + JWT Auth)
+         │   │   ├── config/             # Configurations (DB connection, JWT secret, env)
+         │   │   ├── controllers/        # Logic for handling requests
+         │   │   ├── middleware/         # Security middlewares (Auth check, Rate limiting)
+         │   │   ├── models/             # MongoDB Mongoose models (Users, Logs)
+         │   │   ├── routes/             # API endpoints
+         │   │   ├── utils/              # Extra helpers (encryption, sanitization)
+         │   │   ├── server.js           # Main entry point for backend
+         │   │   ├── package.json        # Backend dependencies
+         │   │   └── README.md           # Backend documentation
+         │
+         ├── .env                        # Environment variables (JWT secret, DB URI)
+         ├── .gitignore                  # Files/folders to ignore in Git
+         └── README.md                   # Full project documentation
+		 
+## Technologies
 
-  Technologies
  ### Frontend
    * HTML5, CSS3 (Bootstrap/Tailwind for styling)
    * React
