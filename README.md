@@ -21,7 +21,7 @@
  4.	Real-Time Alerts – Notify admins instantly of critical security events via dashboard alerts.
  5.	User Role Management – Differentiate between admin and normal user permissions.
  6.	Usable Interface – Deliver a modern, responsive dashboard for both users and admins.
- 7.	Lightweight & Deployable – Run on a simple Node.js + SQLite environment without complex configurations.
+ 7.	Lightweight & Deployable – Run on a simple Node.js + MongoDB environment without complex configurations.
  8.	User Roles & Permissions
 ## Role	Permissions
 ### Admin	
@@ -119,7 +119,7 @@
 </div>
 
 ### Database
-  * SQLite (Flexible for storing Logs, Easier Aggrigation, JSON-Friendly, Cloud-ready)
+  * MongoDB (Flexible for storing Logs, Easier Aggrigation, JSON-Friendly, Cloud-ready)
 <div align="center">
 	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mongodb.png" alt="mongoDB" title="mongoDB"/></code>
 </div>
