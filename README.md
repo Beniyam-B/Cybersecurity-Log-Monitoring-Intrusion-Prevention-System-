@@ -1,4 +1,4 @@
-<img height="400" width="400" align="center" src="https://github.com/Beniyam-B/Cybersecurity-Log-Monitoring-Intrusion-Prevention-System-/blob/b45e18722aca380461e6fedfcbac1d0e8c9e38f9/photo_5816815917580012191_m.jpg"/>
+<img height="300" width="300" align="center" src="https://github.com/Beniyam-B/Cybersecurity-Log-Monitoring-Intrusion-Prevention-System-/blob/b45e18722aca380461e6fedfcbac1d0e8c9e38f9/photo_5816815917580012191_m.jpg"/>
 
 
 
