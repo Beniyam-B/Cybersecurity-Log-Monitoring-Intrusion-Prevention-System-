@@ -63,8 +63,9 @@
 
   ## 7.	Project Structure
        cybersec-log-monitor/
-                   ├── public/               # Frontend files
-                   │   ├── css/               # Stylesheets
+                   ├── public/                # Public files
+				   ├──src/                    #Front-end files
+                   |   ├── css/               # Stylesheets
                    │   ├── js/                # Client-side scripts
                    │   ├── login.html         # Login page
                    │   ├── signup.html        # Signup page
@@ -118,9 +119,9 @@
 </div>
 
 ### Database
-  * SQLite (simple and portable, can later migrate to MySQL/PostgreSQL)
+  * SQLite (Flexible for storing Logs, Easier Aggrigation, JSON-Friendly, Cloud-ready)
 <div align="center">
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sqlite.png" alt="SQLite" title="SQLite"/></code>
+	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mongodb.png" alt="mongoDB" title="mongoDB"/></code>
 </div>
 
  ## Pages & Components
@@ -134,7 +135,8 @@
     * Password strength check
     	
 ### User Pages
-  3.User Dashboard
+
+#### 3.User Dashboard
      * Personal login history
      * Account update form
 	 
