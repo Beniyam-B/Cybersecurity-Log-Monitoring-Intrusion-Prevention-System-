@@ -1,4 +1,6 @@
-![image_aLt align="center"](https://github.com/Beniyam-B/Cybersecurity-Log-Monitoring-Intrusion-Prevention-System-/blob/b45e18722aca380461e6fedfcbac1d0e8c9e38f9/photo_5816815917580012191_m.jpg)
+![image_aLt](https://github.com/Beniyam-B/Cybersecurity-Log-Monitoring-Intrusion-Prevention-System-/blob/b45e18722aca380461e6fedfcbac1d0e8c9e38f9/photo_5816815917580012191_m.jpg)
+
+<img align="center" width="100" height="100" src="https://github.com/Beniyam-B/Cybersecurity-Log-Monitoring-Intrusion-Prevention-System-/blob/b45e18722aca380461e6fedfcbac1d0e8c9e38f9/photo_5816815917580012191_m.jpg">
 
 
 
