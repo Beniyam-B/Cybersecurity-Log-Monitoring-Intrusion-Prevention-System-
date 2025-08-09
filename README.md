@@ -36,25 +36,25 @@
           * Cannot view other users’ logs or security alerts.
 
 ## Key Features
-  1.Secure Authentication
+  ### 1.Secure Authentication
      * Signup & login with password hashing (bcrypt)
      * Session management with secure cookies
      * Input validation & sanitization
-  2.Suspicious Activity Detection
+  ### 2.Suspicious Activity Detection
      * Brute force detection (too many failed logins)
      * SQL injection prevention middleware
      *	XSS prevention middleware
-  3.Activity Logging
+  ### 3.Activity Logging
      * Store every login attempt with IP, timestamp, and status
      * Record all suspicious activities
-  4.Admin Dashboard
+  ### 4.Admin Dashboard
      * View user activity logs
      * See attack statistics and charts
      * Manage user accounts
-  5.User Dashboard
+  ### 5.User Dashboard
      * See personal login history
      * Update personal account details
-  6.Modern UI
+  ### 6.Modern UI
      * Responsive design for both desktop & mobile
      * Charts and data tables for clear visualization
 
@@ -115,10 +115,10 @@
  ## Pages & Components
  
  ### Public Pages
-  1.Login Page
+  #### 1.Login Page
     * Form with username & password
     * Error messages for failed attempts
-  2.Signup Page
+  #### 2.Signup Page
     * Create new account
     * Password strength check
     	
@@ -128,23 +128,24 @@
      * Account update form
 	 
 ### Admin Pages
-  4.Admin Dashboard
-    * Total login attempts (success/fail)
-    * List of suspicious activities
-    * User management (create/update/delete)
-    * Real-time charts (attack frequency, login locations)
+
+#### 4.Admin Dashboard
+       * Total login attempts (success/fail)
+       * List of suspicious activities
+       * User management (create/update/delete)
+       * Real-time charts (attack frequency, login locations)
 ## Final Deliverables
-  1.Fully functional web-based application with:
+  #### 1.Fully functional web-based application with:
     * Login/signup system
     * Suspicious activity detection & alerts
     * Admin & user dashboards
-  2.Well-structured codebase with comments explaining every part
-  3.Database schema & sample data
-  4.System documentation including:
+  #### 2.Well-structured codebase with comments explaining every part
+  #### 3.Database schema & sample data
+  #### 4.System documentation including:
      * Project description & objectives
      * Architecture diagram
      * User manual
      * Security measures explanation
-  5.Deployment instructions for running the project locally or on a server
-  6.Test cases for attack detection (brute force, SQL injection, XSS)
+  #### 5.Deployment instructions for running the project locally or on a server
+  #### 6.Test cases for attack detection (brute force, SQL injection, XSS)
 
