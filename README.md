@@ -9,8 +9,10 @@
 
 # Project Description
 
-   The Cybersecurity Log Monitoring & Intrusion Prevention System is a lightweight yet powerful web-based application designed to monitor, detect, and respond to suspicious activities on a web platform in real-time.
-   It combines a secure authentication system, activity logging, attack detection (including brute force, SQL injection, and XSS attempts), and an administrative dashboard to provide small and medium-sized organizations with affordable, user-friendly security monitoring.
+   The Cybersecurity Log Monitoring & Intrusion Prevention System is a lightweight yet powerful web-based application designed to monitor, detect, and respond to suspicious activities on a web platform 
+   in real-time.
+   It combines a secure authentication system, activity logging, attack detection (including brute force, SQL injection, and XSS attempts), and an administrative dashboard to provide small and medium- 
+   sized organizations with affordable, user-friendly security monitoring.
 
 ## Project Objectives
  1.	Secure Access Management – Provide a robust authentication system with signup, login, and session handling.
@@ -59,27 +61,27 @@
 
 
 
-  7.	Project Structure
-cybersec-log-monitor/
-├── public/               # Frontend files
-│   ├── css/               # Stylesheets
-│   ├── js/                # Client-side scripts
-│   ├── login.html         # Login page
-│   ├── signup.html        # Signup page
-│   ├── dashboard.html     # User dashboard
-│   └── admin.html         # Admin dashboard
-├── routes/                # Express routes
-│   ├── auth.js            # Login/Signup routes
-│   ├── admin.js           # Admin-only routes
-│   └── monitor.js         # Attack detection routes
-├── middleware/            # Security middlewares
-│   ├── bruteForce.js
-│   ├── sqlInjection.js
-│   └── xssProtection.js
-├── db.js                  # Database connection
-├── app.js                 # Main backend server
-├── package.json
-└── README.md
+  ## 7.	Project Structure
+       cybersec-log-monitor/
+                   ├── public/               # Frontend files
+                   │   ├── css/               # Stylesheets
+                   │   ├── js/                # Client-side scripts
+                   │   ├── login.html         # Login page
+                   │   ├── signup.html        # Signup page
+                   │   ├── dashboard.html     # User dashboard
+                   │   └── admin.html         # Admin dashboard
+                   ├── routes/                # Express routes
+                   │   ├── auth.js            # Login/Signup routes
+                   │   ├── admin.js           # Admin-only routes
+                   │   └── monitor.js         # Attack detection routes
+                   ├── middleware/            # Security middlewares
+                   │   ├── bruteForce.js
+                   │   ├── sqlInjection.js
+                   │   └── xssProtection.js
+                   ├── db.js                  # Database connection
+                   ├── app.js                 # Main backend server
+                   ├── package.json
+                   └── README.md
 
   Technologies
  ### Frontend
