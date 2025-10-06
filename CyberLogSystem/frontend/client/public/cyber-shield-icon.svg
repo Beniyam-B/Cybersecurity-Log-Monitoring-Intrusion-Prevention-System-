@@ -1,0 +1,29 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield background -->
+  <path d="M16 2L28 8V16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16V8L16 2Z" fill="#3B82F6" stroke="#1E40AF" stroke-width="2"/>
+  
+  <!-- Shield inner pattern -->
+  <path d="M16 6L24 10V16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16V10L16 6Z" fill="#60A5FA" opacity="0.7"/>
+  
+  <!-- Center lock symbol -->
+  <rect x="12" y="14" width="8" height="6" rx="1" fill="#1E40AF"/>
+  <circle cx="16" cy="18" r="1" fill="#FFFFFF"/>
+  <path d="M14 14V12C14 10.3431 15.3431 9 17 9C18.6569 9 20 10.3431 20 12V14" stroke="#1E40AF" stroke-width="1.5" fill="none"/>
+  
+  <!-- Circuit lines -->
+  <path d="M6 12L10 12" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <path d="M22 12L26 12" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <path d="M6 20L10 20" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <path d="M22 20L26 20" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
