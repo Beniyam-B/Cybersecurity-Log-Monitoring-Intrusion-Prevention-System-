@@ -1,173 +1,271 @@
-<img height="300" width="300" align-item="center" src="https://github.com/Beniyam-B/Cybersecurity-Log-Monitoring-Intrusion-Prevention-System-/blob/b45e18722aca380461e6fedfcbac1d0e8c9e38f9/photo_5816815917580012191_m.jpg"/>
+Perfect — since your README will represent the *CyberLogSystem* professionally on GitHub, I’ll rewrite and enhance it based on your **system documentation**, giving it a clean structure, developer-friendly readability, and alignment with your report’s content (objectives, diagrams, structure, tools, etc.).
 
+Here’s your **fully revised GitHub README** 👇
 
+---
 
+```markdown
+<p align="center">
+  <img height="300" width="300" src="https://github.com/Beniyam-B/Cybersecurity-Log-Monitoring-Intrusion-Prevention-System-/blob/b45e18722aca380461e6fedfcbac1d0e8c9e38f9/photo_5816815917580012191_m.jpg" alt="CyberLogSystem Logo"/>
+</p>
 
+<h1 align="center">🛡️ CyberLogSystem: Log Monitoring & Intrusion Prevention System</h1>
 
+<p align="center">
+  <b>A modern, web-based cybersecurity platform designed to monitor, detect, and prevent suspicious activities in real-time.</b><br/>
+  <i>Developed by Computer Science Students for Secure Web Environments</i>
+</p>
 
+---
 
+## 🧩 Project Overview
 
-# Project Description
+**CyberLogSystem** is a lightweight yet powerful **Log Monitoring and Intrusion Prevention System (LMIPS)** designed to provide continuous monitoring, attack detection, and real-time alerting for web applications.  
+It combines **secure authentication**, **intelligent activity logging**, and **admin control dashboards** to help small and medium organizations strengthen their digital security.
 
-   The Cybersecurity Log Monitoring & Intrusion Prevention System is a lightweight yet powerful web-based application designed to monitor, detect, and respond to suspicious activities on a web platform 
-   in real-time.
-   It combines a secure authentication system, activity logging, attack detection (including brute force, SQL injection, and XSS attempts), and an administrative dashboard to provide small and medium- 
-   sized organizations with affordable, user-friendly security monitoring.
+---
 
-## Project Objectives
- 1.	Secure Access Management – Provide a robust authentication system with signup, login, and session handling.
- 2.	Comprehensive Logging – Record all login attempts (successful and failed) with timestamp, IP address, and user data.
- 3.	Attack Detection – Identify and log suspicious activities like brute force attempts, SQL injection patterns, and XSS payloads.
- 4.	Real-Time Alerts – Notify admins instantly of critical security events via dashboard alerts.
- 5.	User Role Management – Differentiate between admin and normal user permissions.
- 6.	Usable Interface – Deliver a modern, responsive dashboard for both users and admins.
- 7.	Lightweight & Deployable – Run on a simple Node.js + MongoDB environment without complex configurations.
- 8.	User Roles & Permissions
-## Role	Permissions
-### Admin	
-          * Full access to the admin dashboard.
-          * View all login attempts.
-          * View and manage suspicious activity logs.
-          * Create, update, or remove user accounts.
-          * Set security thresholds (e.g., brute force attempt limit).
-### Normal User	- Sign up and log in to personal account.
-          * Access their own dashboard.
-          * View their personal login history.
-          * Cannot view other users’ logs or security alerts.
+## 🎯 Project Objectives
 
-## Key Features
-  ### 1.Secure Authentication
-     * Signup & login with password hashing (bcrypt)
-     * Session management with secure cookies
-     * Input validation & sanitization
-  ### 2.Suspicious Activity Detection
-     * Brute force detection (too many failed logins)
-     * SQL injection prevention middleware
-     *	XSS prevention middleware
-  ### 3.Activity Logging
-     * Store every login attempt with IP, timestamp, and status
-     * Record all suspicious activities
-  ### 4.Admin Dashboard
-     * View user activity logs
-     * See attack statistics and charts
-     * Manage user accounts
-  ### 5.User Dashboard
-     * See personal login history
-     * Update personal account details
-  ### 6.Modern UI
-     * Responsive design for both desktop & mobile
-     * Charts and data tables for clear visualization
+1. **Secure Access Management** – Robust authentication and session handling.  
+2. **Comprehensive Logging** – Record all login attempts (success/failure) with timestamp, IP, and device info.  
+3. **Attack Detection** – Detect brute force, SQL injection, and XSS attempts.  
+4. **Real-Time Alerts** – Instantly notify admins of suspicious behavior.  
+5. **User Role Management** – Clearly defined Admin and User roles.  
+6. **Usable Interface** – Modern, responsive dashboard for users and admins.  
+7. **Lightweight Deployment** – Works seamlessly on Node.js + MongoDB stack.
 
+---
 
+## 👥 User Roles and Permissions
 
+| **Role** | **Permissions** |
+|-----------|----------------|
+| **Admin** | Full dashboard access, view/manage all logs, manage users, and configure security thresholds. |
+| **Normal User** | Sign up, log in, access personal dashboard, view own login history only. |
 
-  ## 7.	Project Structure
-      CyberLogSystem/
-         │
-         ├── frontend/                 # Public-facing code (React / Static HTML+CSS+JS)
-         │   ├── public/                # Static assets (images, icons, favicon, manifest)
-         │   ├── src/                   # React source code or HTML+CSS+JS if not React
-         │   │   ├── components/        # Reusable UI elements (buttons, forms, modals)
-         │   │   ├── pages/             # Each main page (Login, Signup, Dashboard, Admin)
-         │   │   ├── utils/             # Helper functions (API calls, validation)
-         │   │   ├── App.js             # Main app wrapper
-         │   │   ├── index.js           # Entry point for React
-         │   │   └── styles/            # Global CSS or Tailwind configs
-         │   ├── package.json           # Frontend dependencies & scripts
-         │   └── README.md              # Frontend documentation
-         │
-         ├── secure/                    # Secure folder holding backend code
-         │   ├── backend/               # Backend (Express.js + MongoDB + JWT Auth)
-         │   │   ├── config/             # Configurations (DB connection, JWT secret, env)
-         │   │   ├── controllers/        # Logic for handling requests
-         │   │   ├── middleware/         # Security middlewares (Auth check, Rate limiting)
-         │   │   ├── models/             # MongoDB Mongoose models (Users, Logs)
-         │   │   ├── routes/             # API endpoints
-         │   │   ├── utils/              # Extra helpers (encryption, sanitization)
-         │   │   ├── server.js           # Main entry point for backend
-         │   │   ├── package.json        # Backend dependencies
-         │   │   └── README.md           # Backend documentation
-         │
-         ├── .env                        # Environment variables (JWT secret, DB URI)
-         ├── .gitignore                  # Files/folders to ignore in Git
-         └── README.md                   # Full project documentation
-		 
-## Technologies
+---
 
- ### Frontend
-   * HTML5, CSS3 (Bootstrap/Tailwind for styling)
-   * React
-   * TypeScript/javaScript
-   * shadcn-ui
-   * React-Router
-   * vite
+## 🔑 Key Features
+
+### 🧱 1. Secure Authentication
+- Signup & login with **bcrypt.js** password hashing  
+- Session management with **express-session**  
+- Input validation and sanitization  
+
+### 🕵️ 2. Suspicious Activity Detection
+- **Brute-force attack detection** (login attempts threshold)  
+- **SQL Injection & XSS prevention middleware**  
+- Logs structured for quick incident review  
+
+### 🗂️ 3. Activity Logging
+- Every login attempt recorded with timestamp, IP, and status  
+- Suspicious activities stored separately for analysis  
+
+### 🧑‍💻 4. Admin Dashboard
+- Real-time attack statistics  
+- Manage user accounts  
+- Visualized data via charts and tables  
+
+### 👤 5. User Dashboard
+- Personal login activity overview  
+- Update profile details  
+
+### 💻 6. Modern Responsive UI
+- **TailwindCSS** + **ShadCN UI** + **Chart.js**  
+- Accessible across desktop & mobile  
+
+---
+
+## 🧱 System Architecture
+
+The system follows a **three-tier architecture**:
+
+```
+
+Frontend (React, Vite, Tailwind)
+↓
+Backend (Node.js + Express.js)
+↓
+Database (MongoDB)
+
+```
+
+Each component communicates through secured API routes and is protected using middleware-based authentication and validation.
+
+---
+
+## 🧩 Project Structure
+
+```
+
+CyberLogSystem/
+│
+├── frontend/                    # Frontend (React + Tailwind + shadcn-ui)
+│   ├── src/
+│   │   ├── components/          # Reusable UI components
+│   │   ├── pages/               # Login, Signup, Dashboards
+│   │   ├── utils/               # API handlers, validation
+│   │   ├── styles/              # Global CSS / Tailwind setup
+│   │   ├── App.js               # Root component
+│   │   └── index.js             # Entry point
+│   ├── package.json
+│   └── README.md
+│
+├── secure/
+│   └── backend/
+│       ├── config/              # DB, JWT, and environment configs
+│       ├── controllers/         # Request handling logic
+│       ├── middleware/          # Security filters and verifications
+│       ├── models/              # Mongoose schemas (Users, Logs)
+│       ├── routes/              # API route definitions
+│       ├── utils/               # Helper functions (encryption, email)
+│       ├── server.js            # Backend entry point
+│       └── package.json
+│
+├── .env                         # Environment variables (DB_URI, JWT_SECRET)
+├── .gitignore                   # Ignored files
+└── README.md                    # Full documentation
+
+````
+
+---
+
+## ⚙️ Technologies Used
+
+### 🖥️ Frontend
+- **React + Vite**
+- **TypeScript / JavaScript**
+- **Tailwind CSS / Shadcn UI / Bootstrap**
+- **Chart.js** for analytics visualization
+- **React Router** for navigation
+
 <div align="center">
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/></code>
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/></code>
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png" alt="Bootstrap" title="Bootstrap"/></code>
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" title="Tailwind CSS"/></code>
+  <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/react.png"/></code>
+  <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/tailwind_css.png"/></code>
+  <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/shadcn_ui.png"/></code>
+  <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/typescript.png"/></code>
+  <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/vite.png"/></code>
 </div>
+
+### 🛠️ Backend
+- **Node.js + Express.js**
+- **Helmet.js** for security headers  
+- **Express-session** for session management  
+- **bcrypt.js** for password hashing  
+- **Body-parser** for form handling  
+
 <div align="center">
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/shadcn_ui.png" alt="ShadCn UI" title="ShadCn UI"/></code>
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" title="React"/></code>
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" title="TypeScript"/></code>
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png" alt="Vite" title="Vite"/></code>
+  <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/node_js.png"/></code>
+  <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/express.png"/></code>
 </div>
-   * Chart.js (for data visualization)
-   
-### Backend
-  * Node.js
-  * Express.js
-  * Helmet.js (security headers)
-  * Express-session (session handling)
-  * bcrypt.js (password hashing)
-  * Body-parser (form handling)
+
+### 🗄️ Database
+- **MongoDB** – Schema-based storage for users, logs, and security events  
+- Optimized for JSON-based data and cloud integration  
+
 <div align="center">
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/node_js.png" alt="Node.js" title="Node.js"/></code>
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/express.png" alt="Express" title="Express"/></code>
+  <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/mongodb.png"/></code>
 </div>
 
-### Database
-  * MongoDB (Flexible for storing Logs, Easier Aggrigation, JSON-Friendly, Cloud-ready)
-<div align="center">
-	<code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mongodb.png" alt="mongoDB" title="mongoDB"/></code>
-</div>
+---
 
- ## Pages & Components
- 
- ### Public Pages
-  #### 1.Login Page
-    * Form with username & password
-    * Error messages for failed attempts
-  #### 2.Signup Page
-    * Create new account
-    * Password strength check
-    	
-### User Pages
+## 🧭 System Pages & Workflows
 
-#### 3.User Dashboard
-     * Personal login history
-     * Account update form
-	 
-### Admin Pages
+### 🌐 Public Pages
+- **Login Page:** User authentication with validation and error handling.  
+- **Signup Page:** Account creation with password strength check.  
 
-#### 4.Admin Dashboard
-       * Total login attempts (success/fail)
-       * List of suspicious activities
-       * User management (create/update/delete)
-       * Real-time charts (attack frequency, login locations)
-## Final Deliverables
-  #### 1.Fully functional web-based application with:
-    * Login/signup system
-    * Suspicious activity detection & alerts
-    * Admin & user dashboards
-  #### 2.Well-structured codebase with comments explaining every part
-  #### 3.Database schema & sample data
-  #### 4.System documentation including:
-     * Project description & objectives
-     * Architecture diagram
-     * User manual
-     * Security measures explanation
-  #### 5.Deployment instructions for running the project locally or on a server
-  #### 6.Test cases for attack detection (brute force, SQL injection, XSS)
+### 👤 User Pages
+- **Dashboard:** Displays personal login history and profile settings.  
+
+### 🧑‍💼 Admin Pages
+- **Dashboard:** View total login attempts, suspicious activities, and analytics charts.  
+- **User Management:** Create, update, or delete user accounts.  
+- **Alert Center:** View real-time attack notifications and statistics.
+
+---
+
+## 🧪 Testing & Evaluation
+
+- **Functional Testing:** Login, signup, dashboard operations  
+- **Security Testing:** SQL injection, XSS, and brute-force simulations  
+- **Performance Testing:** Response time and session handling under load  
+
+---
+
+## 🚀 Deployment & Usage
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/Beniyam-B/Cybersecurity-Log-Monitoring-Intrusion-Prevention-System-.git
+````
+
+2. Navigate to project folder
+
+   ```bash
+   cd CyberLogSystem
+   ```
+3. Install dependencies (for both frontend and backend)
+
+   ```bash
+   npm install
+   ```
+4. Create `.env` file in backend root with:
+
+   ```
+   DB_URI = your_mongo_connection_string
+   JWT_SECRET = your_secret_key
+   SESSION_SECRET = your_session_secret
+   ```
+5. Run the backend
+
+   ```bash
+   npm run server
+   ```
+6. Run the frontend
+
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📦 Final Deliverables
+
+✅ Full working web application (frontend + backend)
+✅ Complete system documentation (architecture, ER, DFD, UML)
+✅ Configurable security rules (brute-force threshold, alerts)
+✅ Deployment and setup guide
+✅ Testing reports and evaluation metrics
+
+---
+
+## 📚 Documentation Includes
+
+* System Analysis and Design
+* Use Case, Activity, and Data Flow Diagrams
+* Entity Relationship Model
+* Interface Flow Diagram
+* Implementation Overview
+* Testing and Result Discussion
+
+
+
+## 🏁 Conclusion
+
+The **CyberLogSystem** enhances digital safety through automated log analysis and intelligent intrusion detection.
+It empowers organizations to **detect**, **analyze**, and **respond** to potential threats efficiently — ensuring data integrity and user security.
+
+---
+
+### 💡 Contributors
+
+* **Abrham Habtamu Moges**
+* **Beniyam B.**
+* **Team CyberLogSystem – Unity University**
+
+---
+
+<p align="center">🔒 “Securing the Web, One Log at a Time.”</p>
 
